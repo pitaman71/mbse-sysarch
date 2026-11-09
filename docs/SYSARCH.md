@@ -10,6 +10,14 @@ what was built, and what is still open. It cites the mbse basis by ID ([mbse-bas
 and mbse-schemas' design ([FRAMEWORK.md](https://github.com/pitaman71/mbse-schemas/blob/main/docs/FRAMEWORK.md))
 rather than restating them.
 
+It builds two capabilities of [FEA-009: layered interaction models](https://github.com/pitaman71/mbse-basis/blob/main/docs/features/FEA-009.md):
+[CAP-182: modeling system structure as containers, axes and containment](https://github.com/pitaman71/mbse-basis/blob/main/docs/capabilities/CAP-182.md),
+the Structure package, and
+[CAP-183: modeling system interactions as modules, interfaces, ports, implementations, instances and channels](https://github.com/pitaman71/mbse-basis/blob/main/docs/capabilities/CAP-183.md),
+the Interactions package. A third,
+[CAP-204: cost estimates of a declared work metric over patterns of system architecture activity](https://github.com/pitaman71/mbse-basis/blob/main/docs/capabilities/CAP-204.md),
+is mbse-sysarch's too, and not yet built.
+
 ## The model
 
 `Structure` and `Interactions` are two packages of schemas, each built in the caller's store by its `define(store)`
@@ -134,6 +142,8 @@ Decided by the agent while building, to confirm or overturn:
 - **An instance's two names**: the `HasInstance` name, and the `name` it inherits from `Structure.Container`.
 - **Directions beyond in and out**: a bidirectional port, or request and response sides.
 - **Distributions**: which semantics are wanted, and whether they belong to the channel or to its destinations.
+- **Cost models**, [CAP-204: cost estimates of a declared work metric over patterns of system architecture activity](https://github.com/pitaman71/mbse-basis/blob/main/docs/capabilities/CAP-204.md):
+  what a work metric is declared on, and which patterns of a design's activity its estimates attach to.
 - **Rendering with mbse-diagrams.** The user plans for mbse-sysarch to port, in the near future, to
   [mbse-diagrams](https://github.com/pitaman71/mbse-diagrams), a general-purpose utility for incremental rendering
   that is still under development. When, and what a design renders as, are not yet decided.
