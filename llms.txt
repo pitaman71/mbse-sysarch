@@ -1,0 +1,25 @@
+# mbse-sysarch
+
+> System architectures as mbse-schemas data. Interactions: modules kept by name in the store's library, each with interfaces and ports (each port "in" or "out"); implementations of a module by instances of other modules, cooperating asynchronously over channels, each channel carrying messages of one schema (linked as the schema object) from its sources to its destinations, delivered BROADCAST, ANYCAST or ROUND_ROBIN. Structure: containers holding their contents hard (structure) or soft (organization, where another container organizes them), and axes that soft containers lie along. Checks list what no unique clause can express. Python (`mbse.Architecture.Systems`) on mbse-schemas 0.22.0; TypeScript is planned.
+
+## Why
+
+- [MBSE.md](https://github.com/pitaman71/mbse-basis/blob/main/MBSE.md): executable specifications, and each mbse repository's part in them
+
+## Using it
+
+- [Agent skill](skills/mbse-sysarch/SKILL.md): when to use it, the practices that prevent most mistakes, and references loaded per task
+- [Python](skills/mbse-sysarch/references/python.md): a complete program, cheat sheet and traps
+
+## Learning it
+
+- [Python tutorial](python3/tutorials/README.md): four case studies, from one module to a checked, saved design
+
+## Design
+
+- [SYSARCH.md](docs/SYSARCH.md): every schema, the decisions, and the open questions
+
+## Optional
+
+- [AGENTS.md](AGENTS.md): for agents changing this repository
+- [mbse-schemas](https://github.com/pitaman71/mbse-schemas): the data underneath
